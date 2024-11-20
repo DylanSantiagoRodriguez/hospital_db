@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.version1.controllers.CitaController">
+    <Label text="Crear Cita" style="-fx-font-size: 20;"/>
+    
+    <HBox spacing="10">
+        <Label text="Paciente:"/>
+        <ComboBox fx:id="comboPaciente" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Médico:"/>
+        <ComboBox fx:id="comboMedico" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fecha:"/>
+        <DatePicker fx:id="fechaCita"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Hora:"/>
+        <TextField fx:id="horaCita" promptText="HH:MM"/>
+    </HBox>
+    
+    <HBox spacing="10">
+        <Button text="Crear Cita" onAction="#crearCita"/>
+        <Button text="Cancelar" onAction="#cancelar"/>
+    </HBox>
+</VBox>

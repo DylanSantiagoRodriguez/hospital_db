@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.version1.controllers.HistorialController">
+    <Label text="Historial Clínico" style="-fx-font-size: 20;"/>
+    
+    <TableView fx:id="tableHistorial">
+        <TableColumn text="Fecha" fx:id="colFecha"/>
+        <TableColumn text="Descripción" fx:id="colDescripcion"/>
+        <TableColumn text="Tratamiento" fx:id="colTratamiento"/>
+        <TableColumn text="Duración" fx:id="colDuracion"/>
+    </TableView>
+    
+    <HBox spacing="10" style="-fx-padding: 10;">
+        <Button text="Ver Detalles" onAction="#verDetalles"/>
+        <Button text="Cerrar" onAction="#cerrar"/>
+    </HBox>
+</VBox>

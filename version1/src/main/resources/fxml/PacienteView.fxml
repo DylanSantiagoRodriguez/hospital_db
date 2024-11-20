@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.version1.controllers.PacienteController">
+    <Label text="Registrar Paciente" style="-fx-font-size: 20;"/>
+    
+    <HBox spacing="10">
+        <Label text="Nombre:"/>
+        <TextField fx:id="nombrePaciente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Apellido:"/>
+        <TextField fx:id="apellidoPaciente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fecha de Nacimiento:"/>
+        <DatePicker fx:id="fechaNacimientoPaciente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Teléfono:"/>
+        <TextField fx:id="telefonoPaciente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Dirección:"/>
+        <TextField fx:id="direccionPaciente"/>
+    </HBox>
+    
+    <HBox spacing="10" style="-fx-padding: 10;">
+        <Button text="Registrar" onAction="#registrarPaciente"/>
+        <Button text="Cancelar" onAction="#cancelar"/>
+    </HBox>
+</VBox>
